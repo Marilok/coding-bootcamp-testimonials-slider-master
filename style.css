@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: hsl(240, 38%, 20%);
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.card {
+  min-width: 100vw;
+  height: 100%;
+  padding: 48px 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+}
+
+.text_wrap {
+  position: relative;
+  margin-top: 5rem;
+}
+
+.hero_wrap {
+  position: relative;
+  height: 250px;
+  margin: auto;
+}
+
+.hero {
+  width: 250px;
+  height: auto;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+#tanya, #john {
+  position: relative;
+}
+
+#bg {
+  position: absolute;
+  z-index: -1;
+  width: auto;
+  height: 125%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon_wrap {
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  width: 80px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+#quotes, #curve{
+  position: absolute;
+  z-index: -1;
+}
+
+  #quotes {
+    width: auto;
+    height: 20%;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #curve {
+    max-width: 100%;
+    height: auto;
+    top: 100%;
+    left: 0;
+    transform: translateY(-100%);
+  }
+
+  .light {
+    font-weight: 300;
+  }
+
+  .medium {
+    font-weight: 500;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+
+  .gray {
+    color: hsl(240, 18%, 77%);
+  }
+
+  @media only screen and (min-width: 1080px) {
+    body {
+      font-size: 32px;
+    }
+
+    .card {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text_wrap {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      margin: auto;
+      text-align: left;
+      position: relative;
+      left: 25%;
+    }
+
+    h4 {
+      font-size: 0.67em;
+    }
+
+    #quotes {
+      left: 20%;
+      height: 40%;
+      top: -5%;
+    }
+
+    .info {
+      display: inline-block;
+    }
+
+    .hero_wrap {
+      grid-column: 2 / 3;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero {
+      width: 540px;
+    }
+
+    .m_auto {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+
+    #tanya, #john {
+      margin: auto;
+    }
+
+    #bg {
+      height: 125%;
+    }
+
+    .icon_wrap {
+      top: 100%;
+      left: 30%;
+      width: 115px;
+      height: 55px;
+    }
+
+    .icon {
+      padding: 20px;
+    }
+  }
+
+  /* - Dark Blue: hsl(240, 38%, 20%)
+- Grayish Blue: hsl(240, 18%, 77%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 32px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 300, 500, 700 */
